@@ -1,0 +1,27 @@
+This program runs Paxos consensus algorithm amongst the participants to reach a consensus on a selecting one alphabet between 'a' and 'z'
+Starting Paxos participant process : Participant#0
+Starting Paxos participant process : Participant#1
+Starting Paxos participant process : Participant#2
+Please wait while the participant processes intialize and execute...
+Driver is listening for connection...
+Driver is listening for connection...
+incoming message: 'GetNewN
+Outgoing message: '1
+Driver is listening for connection...
+Driver is listening for connection...
+incoming message: 'GetNewN
+Outgoing message: '2
+incoming message: 'GetNewN
+Outgoing message: '3
+Driver is listening for connection...
+incoming message: 'Consensus;n
+Driver is listening for connection...
+incoming message: 'Consensus;n
+Driver is listening for connection...
+incoming message: 'Consensus;n
+Consensus has been reached on value : n
+Consensus has been reached on value : n
+See '<participant name>.out' file(s) for participant-level logging information
+See '<participant name>.out' file(s) for participant-level logging information
+Consensus has been reached on value : n
+See '<participant name>.out' file(s) for participant-level logging information

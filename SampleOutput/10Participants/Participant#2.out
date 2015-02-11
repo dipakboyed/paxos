@@ -1,0 +1,24 @@
+Starting Participant#2
+Participant#2: Acceptor : Starting to listen on port 20002
+Participant#2: Proposer : Requesting new n from driver
+Participant#2: Proposer : Received new n=1from driver
+Participant#2: Proposer : Sending new proposal (1,r) to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;2;1
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;2;1;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;0;2
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;0;2;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;5;3
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;5;3;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;7;4
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;7;4;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;4;5
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;4;5;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;3;6
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;3;6;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;2;1;r
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;0;2;r
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;5;3;p
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;7;4;c
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;4;5;h
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;3;6;d
+Participant#2: Acceptor : Sending 'MSG_ACKACCEPT;3;2;6;d'to coordinator

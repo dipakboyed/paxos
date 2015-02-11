@@ -1,0 +1,32 @@
+Starting Participant#2
+Participant#2: Acceptor : Starting to listen on port 20002
+Participant#2: Proposer : Requesting new n from driver
+Participant#2: Proposer : Received new n=2from driver
+Participant#2: Proposer : Sending new proposal (2,w) to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;1;1
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;1;1;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;3;3
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;3;3;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;2;2
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;4;4
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;4;4;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_PREPAREREQUEST;0;5
+Participant#2: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;0;5;2;-1;0' to coordinator
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;1;1;v
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;1;1;v
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;1;1;v
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;3;3;w
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;3;3;w
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;3;3;w
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;4;4;x
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;4;4;x
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;4;4;x
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;0;5;p
+Participant#2: Acceptor : Sending 'MSG_ACKACCEPT;0;2;5;p'to coordinator
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;0;5;p
+Participant#2: Acceptor : Sending 'MSG_ACKACCEPT;0;2;5;p'to coordinator
+Participant#2: Acceptor : Received  message: MSG_ACCEPT;0;5;p
+Participant#2: Acceptor : Sending 'MSG_ACKACCEPT;0;2;5;p'to coordinator
+Participant#2: Proposer : Received from coordinator 'MSG_CONSENSUS;p'
+Participant#2: Proposer : Participant has reached a consensus on value: p
+Participant#2: Proposer : Sending consensus information to driver

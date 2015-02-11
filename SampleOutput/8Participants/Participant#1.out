@@ -1,0 +1,17 @@
+Starting Participant#1
+Participant#1: Acceptor : Starting to listen on port 20001
+Participant#1: Proposer : Requesting new n from driver
+Participant#1: Proposer : Received new n=5from driver
+Participant#1: Proposer : Couldn't get I/O for the connection to coordinator.
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Proposer.ExecuteRole(Proposer.java:68)
+	at Participant.main(Participant.java:80)

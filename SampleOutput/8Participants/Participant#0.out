@@ -1,0 +1,291 @@
+Starting Participant#0
+Participant#0: Coordinator : Starting to listen on port 19999
+Participant#0: Acceptor : Starting to listen on port 20000
+Participant#0: Proposer : Requesting new n from driver
+Participant#0: Proposer : Received new n=1from driver
+Participant#0: Proposer : Sending new proposal (1,s) to coordinator
+Participant#0: Coordinator : Received message: MSG_PROPOSAL;0;1;s
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;0;1' to acceptor#0
+Participant#0: Acceptor : Received  message: MSG_PREPAREREQUEST;0;1
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;0;1;0;-1;0' to coordinator
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;0;1' to acceptor#3
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;0;1' to acceptor#4
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;0;1' to acceptor#5
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;0;1' to acceptor#7
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;0;1;0;-1;0
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;0;1;3;-1;0
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;0;1;4;-1;0
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;0;1;5;-1;0
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;0;1;7;-1;0
+Participant#0: Coordinator : Sending 'MSG_ACCEPT;0;1;s' to acceptor#0
+Participant#0: Acceptor : Received  message: MSG_ACCEPT;0;1;s
+Participant#0: Acceptor : Sending 'MSG_ACKACCEPT;0;0;1;s'to coordinator
+Participant#0: Coordinator : Sending 'MSG_ACCEPT;0;1;s' to acceptor#3
+Participant#0: Coordinator : Sending 'MSG_ACCEPT;0;1;s' to acceptor#4
+Participant#0: Coordinator : Sending 'MSG_ACCEPT;0;1;s' to acceptor#5
+Participant#0: Coordinator : Sending 'MSG_ACCEPT;0;1;s' to acceptor#7
+Participant#0: Coordinator : Received message: MSG_PROPOSAL;4;2;h
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;4;2' to acceptor#0
+Participant#0: Acceptor : Received  message: MSG_PREPAREREQUEST;4;2
+Participant#0: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;4;2;0;1;s' to coordinator
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;4;2' to acceptor#3
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;4;2' to acceptor#4
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;4;2' to acceptor#5
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;4;2' to acceptor#7
+Participant#0: Coordinator : Received message: MSG_PROPOSAL;7;3;r
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;7;3' to acceptor#0
+Participant#0: Acceptor : Received  message: MSG_PREPAREREQUEST;7;3
+Participant#0: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;7;3;0;1;s' to coordinator
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;7;3' to acceptor#3
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;7;3' to acceptor#4
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;7;3' to acceptor#5
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;7;3' to acceptor#7
+Participant#0: Coordinator : Received message: MSG_ACKACCEPT;0;0;1;s
+Participant#0: Coordinator : Received message: MSG_PROPOSAL;5;4;l
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;5;4' to acceptor#0
+Participant#0: Acceptor : Received  message: MSG_PREPAREREQUEST;5;4
+Participant#0: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;5;4;0;1;s' to coordinator
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;5;4' to acceptor#3
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;5;4' to acceptor#4
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;5;4' to acceptor#5
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;5;4' to acceptor#7
+Participant#0: Coordinator : Received message: MSG_PROPOSAL;3;5;y
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;3;5' to acceptor#0
+Participant#0: Acceptor : Received  message: MSG_PREPAREREQUEST;3;5
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;3;5;0;1;s' to coordinator
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;3;5' to acceptor#3
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;3;5' to acceptor#4
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;3;5' to acceptor#5
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:207)
+	at Coordinator.HandleIncomingMsg(Coordinator.java:151)
+	at Coordinator.access$400(Coordinator.java:6)
+	at Coordinator$CoordThread.run(Coordinator.java:91)
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;3;5' to acceptor#7
+Participant#0: Coordinator : Received message: MSG_ACKACCEPT;0;3;1;s
+Participant#0: Coordinator : Received message: MSG_ACKACCEPT;0;4;1;s
+Participant#0: Coordinator : Received message: MSG_ACKACCEPT;0;5;1;s
+Participant#0: Coordinator : Received message: MSG_ACKACCEPT;0;7;1;s
+Participant#0: Coordinator : Majority of acceptors have accepted a value : s
+Participant#0: Coordinator : Sending 'MSG_CONSENSUS;s' to participant#0
+Participant#0: Proposer : Received from coordinator 'MSG_CONSENSUS;s'
+Participant#0: Proposer : Participant has reached a consensus on value: s
+Participant#0: Proposer : Sending consensus information to driver
+Participant#0: Coordinator : Sending 'MSG_CONSENSUS;s' to participant#3
+Participant#0: Coordinator : Sending 'MSG_CONSENSUS;s' to participant#4
+Participant#0: Coordinator : Sending 'MSG_CONSENSUS;s' to participant#5
+Participant#0: Coordinator : Sending 'MSG_CONSENSUS;s' to participant#7
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;4;2;0;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;4;2;3;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;4;2;4;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;4;2;5;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;4;2;7;1;s
+Participant#0: Coordinator : Sending 'MSG_REPLYPROPOSAL;4;2;FAIL;s' to proposer#4
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;7;3;0;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;7;3;3;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;7;3;4;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;7;3;5;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;7;3;7;1;s
+Participant#0: Coordinator : Sending 'MSG_REPLYPROPOSAL;7;3;FAIL;s' to proposer#7
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;5;4;0;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;5;4;3;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;5;4;4;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;5;4;5;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;5;4;7;1;s
+Participant#0: Coordinator : Sending 'MSG_REPLYPROPOSAL;5;4;FAIL;s' to proposer#5
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;3;5;0;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;3;5;3;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;3;5;4;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;3;5;5;1;s
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;3;5;7;1;s
+Participant#0: Coordinator : Sending 'MSG_REPLYPROPOSAL;3;5;FAIL;s' to proposer#3

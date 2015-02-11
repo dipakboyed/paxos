@@ -1,0 +1,15 @@
+Starting Participant#1
+Participant#1: Acceptor : Starting to listen on port 20001
+Participant#1: Acceptor : Received  message: MSG_PREPAREREQUEST;4;1
+Participant#1: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;4;1;1;-1;0' to coordinator
+Participant#1: Acceptor : Received  message: MSG_PREPAREREQUEST;0;2
+Participant#1: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;0;2;1;-1;0' to coordinator
+Participant#1: Proposer : Requesting new n from driver
+Participant#1: Proposer : Received new n=4from driver
+Participant#1: Proposer : Sending new proposal (4,h) to coordinator
+Participant#1: Acceptor : Received  message: MSG_PREPAREREQUEST;3;3
+Participant#1: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;3;3;1;-1;0' to coordinator
+Participant#1: Acceptor : Received  message: MSG_PREPAREREQUEST;1;4
+Participant#1: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;1;4;1;-1;0' to coordinator
+Participant#1: Acceptor : Received  message: MSG_PREPAREREQUEST;9;5
+Participant#1: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;9;5;1;-1;0' to coordinator

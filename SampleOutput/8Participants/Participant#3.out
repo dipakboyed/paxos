@@ -1,0 +1,20 @@
+Starting Participant#3
+Participant#3: Acceptor : Starting to listen on port 20003
+Participant#3: Acceptor : Received  message: MSG_PREPAREREQUEST;0;1
+Participant#3: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;0;1;3;-1;0' to coordinator
+Participant#3: Proposer : Requesting new n from driver
+Participant#3: Proposer : Received new n=5from driver
+Participant#3: Acceptor : Received  message: MSG_ACCEPT;0;1;s
+Participant#3: Acceptor : Sending 'MSG_ACKACCEPT;0;3;1;s'to coordinator
+Participant#3: Proposer : Sending new proposal (5,y) to coordinator
+Participant#3: Acceptor : Received  message: MSG_PREPAREREQUEST;4;2
+Participant#3: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;4;2;3;1;s' to coordinator
+Participant#3: Acceptor : Received  message: MSG_PREPAREREQUEST;7;3
+Participant#3: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;7;3;3;1;s' to coordinator
+Participant#3: Acceptor : Received  message: MSG_PREPAREREQUEST;5;4
+Participant#3: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;5;4;3;1;s' to coordinator
+Participant#3: Acceptor : Received  message: MSG_PREPAREREQUEST;3;5
+Participant#3: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;3;5;3;1;s' to coordinator
+Participant#3: Proposer : Received from coordinator 'MSG_CONSENSUS;s'
+Participant#3: Proposer : Participant has reached a consensus on value: s
+Participant#3: Proposer : Sending consensus information to driver

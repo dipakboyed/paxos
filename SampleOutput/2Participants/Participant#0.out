@@ -1,0 +1,35 @@
+Starting Participant#0
+Participant#0: Coordinator : Starting to listen on port 19999
+Participant#0: Acceptor : Starting to listen on port 20000
+Participant#0: Proposer : Requesting new n from driver
+Participant#0: Proposer : Received new n=1from driver
+Participant#0: Proposer : Sending new proposal (1,q) to coordinator
+Participant#0: Coordinator : Received message: MSG_PROPOSAL;0;1;q
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;0;1' to acceptor#0
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;0;1' to acceptor#1
+Participant#0: Acceptor : Received  message: MSG_PREPAREREQUEST;0;1
+Participant#0: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;0;1;0;-1;0' to coordinator
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;0;1;0;-1;0
+Participant#0: Coordinator : Received message: MSG_PROPOSAL;1;2;j
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;1;2' to acceptor#0
+Participant#0: Acceptor : Received  message: MSG_PREPAREREQUEST;1;2
+Participant#0: Coordinator : Sending 'MSG_PREPAREREQUEST;1;2' to acceptor#1
+Participant#0: Acceptor : Sending 'MSG_ACKPREPAREREQUEST;1;2;0;-1;0' to coordinator
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;0;1;1;-1;0
+Participant#0: Coordinator : Sending 'MSG_ACCEPT;0;1;q' to acceptor#0
+Participant#0: Acceptor : Received  message: MSG_ACCEPT;0;1;q
+Participant#0: Coordinator : Sending 'MSG_ACCEPT;0;1;q' to acceptor#1
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;1;2;0;-1;0
+Participant#0: Coordinator : Received message: MSG_ACKPREPAREREQUEST;1;2;1;-1;0
+Participant#0: Coordinator : Sending 'MSG_ACCEPT;1;2;j' to acceptor#0
+Participant#0: Acceptor : Received  message: MSG_ACCEPT;1;2;j
+Participant#0: Coordinator : Sending 'MSG_ACCEPT;1;2;j' to acceptor#1
+Participant#0: Acceptor : Sending 'MSG_ACKACCEPT;1;0;2;j'to coordinator
+Participant#0: Coordinator : Received message: MSG_ACKACCEPT;1;0;2;j
+Participant#0: Coordinator : Received message: MSG_ACKACCEPT;1;1;2;j
+Participant#0: Coordinator : Majority of acceptors have accepted a value : j
+Participant#0: Coordinator : Sending 'MSG_CONSENSUS;j' to participant#0
+Participant#0: Coordinator : Sending 'MSG_CONSENSUS;j' to participant#1
+Participant#0: Proposer : Received from coordinator 'MSG_CONSENSUS;j'
+Participant#0: Proposer : Participant has reached a consensus on value: j
+Participant#0: Proposer : Sending consensus information to driver
